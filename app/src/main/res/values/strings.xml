@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Project_01_Shopping_App</string>
+
+    <string name="home">home</string>
+    <string name="cart">cart</string>
+    <string name="my">my page</string>
+
+    <string name="empty_history_text">주문한 항목이 없습니다.</string>
+    <string name="google_login_required">구글 로그인이 필요합니다.</string>
+    <string name="order">Order</string>
+    <string name="logout">로그아웃</string>
+    <string name="basket">장바구니</string>
+    <string name="all_clear">전체 삭제</string>
+    <string name="review">Review</string>
+    <string name="writing_review">리뷰쓰기</string>
+    <string name="register_review">리뷰 등록</string>
+    <string name="title">제목</string>
+    <string name="content">내용</string>
+    <string name="submit">SUBMIT</string>
+    <string name="add_image">이미지 등록</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <string name="order_history_title">주문 내역 : %s</string>
+
+    <string name="user_id_not_found">유저 ID가 존재하지 않습니다.</string>
+    <string name="request_error">요청했지만 예상치 못한 이슈가 발생했습니다 : %s</string>
+    <string name="empty_product_list">상품이 없습니다.</string>
+
+</resources>

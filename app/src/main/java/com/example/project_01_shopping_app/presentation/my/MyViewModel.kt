@@ -37,18 +37,6 @@ class MyViewModel(
     @Suppress("UNCHECKED_CAST")
     fun setUserInfo(firebaseUser: FirebaseUser?) = viewModelScope.launch {
         firebaseUser?.let { user ->
-//            when (val orderProductResult = orderRepository.getAllOrderProduct(user.uid)) {
-//                is DefaultOrderRepository.Result.Success<*> -> {
-//                    val orderList = orderProductResult.data as List<OrderEntity>
-//                    setState(
-//                        MyState.Success.Registered(
-//                            user.displayName ?: "익명",
-//                            user.photoUrl,
-//                            orderedProductList = orderList
-//                        )
-//                    )
-//                }
-//            }
             setState(
                 MyState.Success.Registered(
                     user.displayName ?: "익명",

@@ -51,3 +51,5 @@
 - Swipe Refresh Layout
 - Firebase auth
 - Firebase storage
+- BottomNavigationView
+- ViewBinding

@@ -58,18 +58,6 @@ class MyFragment: BaseFragment<MyViewModel, FragmentMyBinding>() {
         }
     }
 
-    private var isFirstShown = false
-
-    // TODO 무슨 작용하는지 확인해보기
-//    override fun onResume() {
-//        super.onResume()
-//        if (isFirstShown.not()) {
-//            isFirstShown = true
-//        } else {
-//            viewModel.fetchData()
-//        }
-//    }
-
     override fun observeData() = viewModel.myLiveData.observe(viewLifecycleOwner) {
         when(it) {
             is MyState.Uninitialized -> initViews()
@@ -131,14 +119,6 @@ class MyFragment: BaseFragment<MyViewModel, FragmentMyBinding>() {
         loginRequiredGroup.isGone = true
         profileImageView.loadCenterCrop(state.profileImageUri.toString(), 60f)
         userNameTextView.text = state.userName
-
-//        if (state.orderedProductList.isEmpty()) {
-//            emptyResultTextView.isGone = false
-//            recyclerView.isGone = true
-//        } else {
-//            emptyResultTextView.isGone = true
-//            recyclerView.isGone = false
-//        }
     }
 
     private fun handleErrorState(state: MyState.Error) {

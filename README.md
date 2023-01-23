@@ -26,8 +26,8 @@
 ---
 
 ### 주요 기능
+- 클린 아키텍처, UseCase
 - MVVM 
-- UseCase
 - State 패턴
 - Koin으로 DI 셋업
 - Mock 아이템 데이터로 아이템 리스트 구현

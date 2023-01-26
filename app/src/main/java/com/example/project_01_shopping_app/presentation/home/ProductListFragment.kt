@@ -82,6 +82,6 @@ class ProductListFragment: BaseFragment<ProductListViewModel, FragmentProductLis
     }
 
     private fun handleErrorState() {
-        Toast.makeText(requireContext(), "에러가 발생했습니다.", Toast.LENGTH_SHORT).show()
+        requireContext().toast("에러가 발생했습니다.")
     }
 }

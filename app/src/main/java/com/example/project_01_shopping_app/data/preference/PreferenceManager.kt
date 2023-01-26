@@ -11,7 +11,7 @@ class PreferenceManager(
 ) {
 
     companion object {
-        const val PREFERENCES_NAME = "aop-part5-chapter-02-pref "
+        const val PREFERENCES_NAME = "project-01-shopping-app-pref "
         private const val DEFAULT_VALUE_STRING = ""
         private const val DEFAULT_VALUE_BOOLEAN = false
         private const val DEFAULT_VALUE_INT = -1

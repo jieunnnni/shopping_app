@@ -9,11 +9,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-internal fun provideProductApiService(retrofit: Retrofit): ProductApiService {
+fun provideProductApiService(retrofit: Retrofit): ProductApiService {
     return retrofit.create(ProductApiService::class.java)
 }
 
-internal fun provideProductRetrofit(
+fun provideProductRetrofit(
     okHttpClient: OkHttpClient,
     gsonConverterFactory: GsonConverterFactory,
 ): Retrofit {
@@ -24,7 +24,7 @@ internal fun provideProductRetrofit(
         .build()
 }
 
-internal fun provideGsonConverterFactory(): GsonConverterFactory {
+fun provideGsonConverterFactory(): GsonConverterFactory {
     return GsonConverterFactory.create(
         GsonBuilder()
             .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
@@ -32,7 +32,7 @@ internal fun provideGsonConverterFactory(): GsonConverterFactory {
     )
 }
 
-internal fun buildOkHttpClient(): OkHttpClient {
+fun buildOkHttpClient(): OkHttpClient {
     val interceptor = HttpLoggingInterceptor()
     if (BuildConfig.DEBUG) {
         interceptor.level = HttpLoggingInterceptor.Level.BODY

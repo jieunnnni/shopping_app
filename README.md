@@ -51,5 +51,6 @@
 - Swipe Refresh Layout
 - Firebase auth
 - Firebase storage
+- Firestore Database
 - BottomNavigationView
 - ViewBinding

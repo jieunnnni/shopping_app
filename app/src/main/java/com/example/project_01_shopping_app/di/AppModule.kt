@@ -64,7 +64,7 @@ val appModule = module {
 
     // Database
     single { provideDB(androidApplication()) }
-    single { provideToDoDao(get()) }
+    single { provideProductDao(get()) }
 
     // Firebase
     single { Firebase.firestore }
